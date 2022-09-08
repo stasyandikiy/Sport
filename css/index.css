@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bree+Serif&family=Edu+TAS+Beginner:wght@700&display=swap');
+
+body{
+    background: black;
+}
+body::before{
+    content: '';
+    position: fixed;
+    left: 0;
+    filter: contrast(200%);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/bgPrice.jpg');
+    background-size: cover;
+}
+#headerBg{
+  
+    opacity: .8;
+    position: relative;
+    top: -120px;
+    width: 100%;
+    height: 800px;
+    z-index: 1;
+    filter: contrast(200%);
+
+}
+.wrapper{
+   position: relative;
+    max-width: 1540px;
+    margin: 0 auto;
+
+}
+header{
+    z-index: 100;
+    max-width: 1540px;
+    height: 690px;
+    font-family: 'Anton', sans-serif;
+    font-weight: 700;
+    margin: 0 auto;
+    position: relative;
+}
+
+#logo{
+    position: relative;
+    z-index: 3;
+    width: 130px;
+    height: 120px;
+}
+.menu{
+    position: relative;
+    letter-spacing: 1px;
+    display: block;
+    width: 720px;
+    margin: 20px 0;
+    float: right;
+    z-index: 3;
+    font-size: 24px;
+}
+
+.menu a:hover{
+    opacity: .9; 
+    color: red;
+
+}
+.menu a{
+    text-shadow: 2px 2px 3px rgb(101, 119, 11);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 10px;   
+}
+.menu >a:first-child{
+    color: red;
+}
+
+.menu >div div a{
+    display: block;
+    margin: 5px 0;
+
+}
+
+.blockWelcome{
+    position: relative;
+    bottom: 331px;
+    width: 100%;
+    height: 210px;
+    opacity: 1;
+    z-index: 134;
+}
+.blockWelcome img{
+    filter: brightness(1.3);
+    filter: contrast(100%);
+    position: absolute;
+    top: -210px;
+    left: 20px;
+    z-index: 5;
+    height: 370px;
+}
+#blackWelcome{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: .8;
+    z-index: 0;
+}
+h1{
+    z-index: 5;
+    position: relative;
+    left: 430px;
+    top: 20px;
+    font-size: 50px;
+    width: 630px;
+    color: #f1d930;
+    text-shadow: 2px 2px 3px grey;
+    font-style:  oblique ;
+    line-height: 70px;
+    font-family: 'Saira', sans-serif;
+}
+h1 p{
+    position: relative;
+    display: block;
+}
+@media(max-width: 1070px){
+    h1 span{
+        display: block;
+    }
+}
+
+
+.blockInfo{
+    max-width: 1540px;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.blockInfo >div{
+    position: relative;
+    width: 480px;
+    height: 360px;
+    margin: 30px;
+    background: white;
+    text-align: center;
+    box-shadow: 2px 3px 4px white;
+}
+.blockInfo span{
+    color: #f1d930;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 1px 0px 1px rgb(203 119 0);
+    display: block;
+    margin: 8px auto;
+    z-index: 3;
+    position: relative;
+
+}
+.blockInfo div p{
+    display: none;
+}
+.blockInfo img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .9;
+}
+.blockInfo button{
+    padding: 14px 30px;
+    background: black;
+    border: 1px solid white;
+    position: relative;
+    top: 230px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px black;
+}
+.blockInfo button:hover{
+    transform: scale(1.08);
+}
+
+/*ПОП-АП Услуг*/
+#popUpServiec{
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px;
+    width: 450px;
+    background: rgb(236, 234, 234);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -230px;
+    margin-left: -230px; 
+    z-index: 10000;
+    border: 3px solid rgb(59, 59, 59);
+    box-shadow: none;
+    color: rgb(0, 0, 0);
+    display: none;
+}
+#spanPopUp{
+    color: #f1d930;
+    font-size: 27px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 1px 0px 1px rgb(255, 51, 0);
+    display: inline-block;
+    margin: 8px 0;
+    z-index: 3;
+    position: relative;
+}
+#pPopUp{
+    margin: 10px 20px;
+    font-size: 16px;
+    z-index: 3;
+    position: relative;
+}
+#pPopUp span{
+    text-align: left;
+    display: block;
+    margin: 14px 0;
+    font-size: 17px;
+}
+#popUpServiec button{
+    padding: 10px 20px;
+    background: black;
+    border: 1px solid white;
+    position: relative;
+    bottom: 5px;
+    color: rgb(255, 249, 249);
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1111111;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px black;
+}
+#popUpServiec button:hover{
+    transform: scale(1.08);
+}
+
+/*СЛАЙДЕР ФОТО ЗАЛА*/
+.blockGallery{
+    max-width: 1540px;
+    margin: 60px auto 0 auto;
+    position: relative;
+    height: 540px;
+    
+}
+.carousel-3d {
+    padding: 20px;
+    -webkit-perspective: 500px;
+    perspective: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.carousel-3d > * {
+    flex: 0 0 auto;
+}
+.carousel-3d figure {
+    margin: 0;
+    width: 50%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+}
+.carousel-3d figure img,
+.carousel-3d figure div {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+}
+.carousel-3d figure div:not(:first-of-type),
+.carousel-3d figure img:not(:first-of-type) {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.carousel-3d nav button {
+	position: absolute;
+	z-index: 10;
+	top: 50%;
+	left: 10px;
+	cursor: pointer;
+	color: #337AB7;
+	background: #BFE2FF;
+	border: 1px solid #337AB7;
+	padding: 5px 10px;
+	font-weight: bold;
+	transition: all .3s ease;
+}
+.carousel-3d nav button.next {
+	left: auto;
+	right: 10px;
+}
+.carousel-3d nav button:hover {
+    color: #FFF;
+    background: #337AB7;
+}
+.carousel-3d figure div {
+	display: flex;
+	height: 100%;
+	align-items: center;
+}
+
+
+
+#title{
+    display: block;
+    height: 200px;
+    font-size: 170px;
+    max-width: 1540px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 7px;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    text-shadow: 2px 2px 3px rgb(216, 216, 0);
+    margin: 0 auto;
+}
+/*Карточка покупки*/
+.WelcomeGym{
+    position: relative;
+    overflow: hidden;
+    width: 900px;
+    height: 560px;
+    margin: 70px auto 0px auto;
+    border-radius: 50px;
+    color: white;
+    border: 1px solid white;
+    z-index: 2;
+    background-color: black;
+}
+
+#abonHand{
+    height: 100%;
+    width: 50%;
+    display: inline-block;
+    border-radius: 30px;
+}
+.WelcomeGym >div{
+    display: inline-block;
+    text-align: center;
+    width: 49%;
+
+}
+.WelcomeGym >div span{
+    font-size: 48px;
+    position: relative;
+    top: -270px;
+    font-weight: 700;
+    font-style:  oblique ;
+    color: white;
+
+}
+.WelcomeGym >div p{
+    font-size: 22px;
+    position: relative;
+    top: -170px;
+    left: 40px;
+    width: 340px;
+    font-weight: 700;
+    color: #f1d930;
+
+}
+.WelcomeGym >div button{
+    padding: 14px 40px;
+    background-color: black;
+    border: 2px dotted white;
+    color: white;
+    font-weight: 700;
+    border-radius: 8px;
+    position: relative;
+    font-size: 17px;
+    top: -50px;
+}
+.WelcomeGym >div button:hover{
+    background: rgb(245, 60, 60);
+    transition: .7s;
+    color: black;
+    border: 2px dotted rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+
+/*КАРТЫ*/
+.blockCarts{
+    max-width: 1540px;
+    margin: 70px auto;
+    text-align: center;
+}
+.blockCarts >div{
+    width: 800px;
+    margin: 30px auto;
+}
+.blockCarts span{
+    padding: 10px 0;
+    display: inline-block;
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+}
+
+
+
+/*ФУТЕР*/
+footer{
+    box-shadow:  0px -3px 3px 0px rgb(207, 204, 14);
+    position: relative;
+    height: 100px;
+   /* background: #f1d930;*/
+    max-width: 1540px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+
+}
+footer span{
+    font-weight: 700;
+    font-size: 16px;
+    position: relative;
+    top: 75px;
+}
+.networks{
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 20px;
+}
+.networks img{
+    margin: 0 8px;
+    width: 60px;
+    height: 60px;
+}
+.networks img:hover{
+    opacity: .8;
+}
+
+.footerContacts{
+    font-size: 20px;
+    font-weight: 700;
+    position: absolute;
+    top: 20px;
+    right: 90px;
+}
+
+.footerContacts a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 4px 0;
+}
+.footerContacts a:hover{
+    color: red;
+}
+
+
+h5{
+    font-size: 28px;
+    color: #f1d930;
+    position: relative;
+    text-align: center;
+}
+/*МЕДИА-ЗАПРОСЫ*/
+@media(max-width: 915px){
+   header{
+    display: none;
+   }
+   .headerMobile{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #f1d930;
+    position: relative;
+    left: 13px;
+    top: 5px;
+    z-index: 100;
+    border-radius: 10px;
+   }
+   .headerMobile span{
+        width: 75%;
+        display: block;
+        height: 5px;
+        background: white;
+        margin: 8px 6px;
+        position: relative;
+        top: 9px;
+        z-index: 522;
+   }
+
+.listBlock{
+    display: none;
+    position: absolute;
+    top: 50px;
+}
+.listBlock a{
+    color: white;
+}.listBlock a:hover{
+    color: #f1d930;
+}
+.headerMobile:hover .listBlock{
+    display: block;
+}
+}
